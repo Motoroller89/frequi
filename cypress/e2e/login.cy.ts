@@ -18,7 +18,7 @@ describe('Login', () => {
     cy.visit('/login');
     cy.get('button').should('contain', 'Login');
     cy.get('li').should('contain', 'No bot selected');
-    cy.get('.card-header').contains('Freqtrade bot Login');
+    cy.get('.card-header').contains('ALAI bot Login');
     // Test prefilled URL
     cy.get('input[id=url-input]').should('have.value', 'http://localhost:3000');
     cy.get('input[id=name-input]').should('exist');
